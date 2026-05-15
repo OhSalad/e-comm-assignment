@@ -1,0 +1,4 @@
+*.log
+student-system.sqlite
+node_modules
+dist
