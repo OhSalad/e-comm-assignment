@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 const app = express();
 
@@ -107,12 +107,6 @@ app.use((req, res) => {
 
 app.use((error, req, res, next) => {
   console.error(error);
-
-  if (error.message?.startsWith('Invalid mark')) {
-    res.status(400).json({ message: error.message });
-    return;
-  }
-
   res.status(500).json({ message: 'Something went wrong on the server.' });
 });
 
