@@ -9,7 +9,6 @@ export function MasterPage({ children, currentPath, onNavigate }) {
     <div className="app-shell">
       <header className="admin-header">
         <div>
-          <p className="eyebrow">Admin</p>
           <h2>Student System</h2>
         </div>
 
@@ -32,7 +31,6 @@ export function MasterPage({ children, currentPath, onNavigate }) {
       <footer className="app-footer">
         <div>
           <strong>Student Grade System</strong>
-          <span>Admin Portal</span>
         </div>
         <p>Ahmad Al Dawood 202201115, 2026</p>
       </footer>
